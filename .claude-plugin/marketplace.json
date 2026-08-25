@@ -1,0 +1,27 @@
+{
+  "name": "agent-skills",
+  "description": "Rashid Mahmood's collection of portable Agent Skills. One catalog, install any skill in Claude Code, Cursor, Codex CLI, or any Agent-Skills-compatible tool.",
+  "owner": {
+    "name": "Rashid Mahmood"
+  },
+  "plugins": [
+    {
+      "name": "mental-model",
+      "description": "Builds a correct, source-grounded mental model of how code actually works — instead of a confident-sounding guess.",
+      "source": {
+        "source": "git-subdir",
+        "url": "code-with-rashid/mental-model",
+        "path": "skills/mental-model"
+      }
+    },
+    {
+      "name": "adversarial-qa",
+      "description": "Drives a repo to measured, resumable test-hardening convergence: coverage, mutation testing, fuzzing, and load/soak, until objective thresholds are met.",
+      "source": {
+        "source": "git-subdir",
+        "url": "code-with-rashid/claude-adversarial-qa-skill",
+        "path": "skills/adversarial-qa"
+      }
+    }
+  ]
+}
