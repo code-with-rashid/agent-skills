@@ -10,7 +10,7 @@
       "description": "Builds a correct, source-grounded mental model of how code actually works — instead of a confident-sounding guess.",
       "source": {
         "source": "git-subdir",
-        "url": "code-with-rashid/mental-model",
+        "url": "https://github.com/code-with-rashid/mental-model.git",
         "path": "skills/mental-model"
       }
     },
@@ -19,7 +19,7 @@
       "description": "Drives a repo to measured, resumable test-hardening convergence: coverage, mutation testing, fuzzing, and load/soak, until objective thresholds are met.",
       "source": {
         "source": "git-subdir",
-        "url": "code-with-rashid/claude-adversarial-qa-skill",
+        "url": "https://github.com/code-with-rashid/claude-adversarial-qa-skill.git",
         "path": "skills/adversarial-qa"
       }
     }
