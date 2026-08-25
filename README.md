@@ -14,6 +14,7 @@ command in Claude Code.
 |---|---|
 | [mental-model](https://github.com/code-with-rashid/mental-model) | Builds a correct, source-grounded mental model of how code actually works — instead of a confident-sounding guess. |
 | [adversarial-qa](https://github.com/code-with-rashid/claude-adversarial-qa-skill) | Drives a repo to measured, resumable test-hardening convergence: coverage, mutation testing, fuzzing, and load/soak, until objective thresholds are met. |
+| [manual-qa-loop](https://github.com/code-with-rashid/manual-qa-loop) | Runs iterative, manual end-to-end QA on a running app — explore, fix, verify, report — until convergence. |
 
 More skills get added here as they ship — no need to re-add anything, they'll show up
 in this catalog automatically.
@@ -26,6 +27,7 @@ in this catalog automatically.
 /plugin marketplace add code-with-rashid/agent-skills
 /plugin install mental-model@codewithrashid-skills
 /plugin install adversarial-qa@codewithrashid-skills
+/plugin install manual-qa-loop@codewithrashid-skills
 ```
 
 ### Cursor
