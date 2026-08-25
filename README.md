@@ -24,8 +24,8 @@ in this catalog automatically.
 
 ```
 /plugin marketplace add code-with-rashid/agent-skills
-/plugin install mental-model@agent-skills
-/plugin install adversarial-qa@agent-skills
+/plugin install mental-model@codewithrashid-skills
+/plugin install adversarial-qa@codewithrashid-skills
 ```
 
 ### Cursor
