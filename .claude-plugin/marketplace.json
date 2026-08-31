@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "mental-model",
-      "description": "Builds a correct, source-grounded mental model of how code actually works \u2014 instead of a confident-sounding guess.",
+      "description": "Builds a correct, source-grounded mental model of how code actually works — instead of a confident-sounding guess.",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/code-with-rashid/mental-model.git",
@@ -25,7 +25,7 @@
     },
     {
       "name": "manual-qa-loop",
-      "description": "Runs iterative, manual end-to-end QA on a running app \u2014 explore, fix, verify, report \u2014 until convergence.",
+      "description": "Runs iterative, manual end-to-end QA on a running app — explore, fix, verify, report — until convergence.",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/code-with-rashid/manual-qa-loop.git",
@@ -34,7 +34,7 @@
     },
     {
       "name": "understory",
-      "description": "Turns a codebase into an interactive HTML course the reader can actually defend \u2014 territory-mapped, self-verifying, with fieldwork in the real repo and spaced recall.",
+      "description": "Turns a codebase into an interactive HTML course the reader can actually defend — territory-mapped, self-verifying, with fieldwork in the real repo and spaced recall.",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/code-with-rashid/understory.git",
