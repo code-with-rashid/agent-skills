@@ -24,12 +24,12 @@
       }
     },
     {
-      "name": "manual-qa-loop",
-      "description": "Runs iterative, manual end-to-end QA on a running app — explore, fix, verify, report — until convergence.",
+      "name": "test-fix-repeat",
+      "description": "Tests a running app end to end, fixes real bugs with regression tests, and repeats until three clean rounds in a row.",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/code-with-rashid/manual-qa-loop.git",
-        "path": "skills/manual-qa-loop"
+        "url": "https://github.com/code-with-rashid/test-fix-repeat.git",
+        "path": "skills/test-fix-repeat"
       }
     },
     {
