@@ -32,29 +32,45 @@ in this catalog automatically.
 /plugin install understory@codewithrashid-skills
 ```
 
-### Cursor
+### Every other tool: copy the skill folder
 
-Customize → Rules → Add Rule → **Remote Rule (GitHub)** → paste the skill's repo URL,
-e.g. `https://github.com/code-with-rashid/mental-model`.
+Each skill is a plain `skills/<name>/` folder with a `SKILL.md` and no
+Claude-Code-only dependencies. Copy that folder (not the whole repo) into the
+skills directory your tool reads:
 
-### Codex CLI
+| Tool | Personal (all projects) | Project only |
+|---|---|---|
+| Codex CLI | `~/.agents/skills/` | `.agents/skills/` |
+| Cursor | `~/.cursor/skills/` or `~/.agents/skills/` | `.cursor/skills/` or `.agents/skills/` |
+| Gemini CLI | `~/.gemini/skills/` or `~/.agents/skills/` | `.gemini/skills/` or `.agents/skills/` |
+| GitHub Copilot | `~/.copilot/skills/` or `~/.agents/skills/` | `.github/skills/` or `.agents/skills/` |
+| Claude Code (without the plugin) | `~/.claude/skills/` | `.claude/skills/` |
 
-Drop the skill folder into `$HOME/.agents/skills` (all repos) or
-`$REPO_ROOT/.agents/skills` (this repo only):
+`~/.agents/skills/` is read by Codex, Cursor, Gemini CLI, and Copilot, so one copy
+there covers all four. For example, with `mental-model`:
 
+```bash
+git clone https://github.com/code-with-rashid/mental-model /tmp/mental-model
+mkdir -p ~/.agents/skills
+cp -r /tmp/mental-model/skills/mental-model ~/.agents/skills/
 ```
-git clone https://github.com/code-with-rashid/mental-model ~/.agents/skills/mental-model
+
+```powershell
+git clone https://github.com/code-with-rashid/mental-model $env:TEMP\mental-model
+New-Item -ItemType Directory -Force "$HOME\.agents\skills" | Out-Null
+Copy-Item -Recurse "$env:TEMP\mental-model\skills\mental-model" "$HOME\.agents\skills\"
 ```
 
-Codex also supports installing directly via its skill installer — see the
-[Codex skills docs](https://developers.openai.com/codex/skills) for the current syntax.
+Some tools can also install straight from the repo:
 
-### Any other Agent-Skills-compatible tool
+- Gemini CLI: `gemini skills install https://github.com/code-with-rashid/mental-model.git --path skills/mental-model`
+- Codex CLI: ask the built-in `$skill-installer` to install from the repo URL.
 
-Every skill is a plain `SKILL.md` folder with no Claude-Code-only dependencies — clone
-the individual skill's repo and point your tool at its `skills/<name>` directory. Check
-your tool's own docs, or the [full client list](https://agentskills.io/clients) for
-tool-specific install steps.
+Per-tool docs: [Codex](https://developers.openai.com/codex/skills) ·
+[Cursor](https://cursor.com/docs/skills) ·
+[Gemini CLI](https://geminicli.com/docs/cli/skills/) ·
+[Copilot](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills) ·
+[all Agent Skills clients](https://agentskills.io/clients).
 
 ## Adding a new skill to the catalog
 
