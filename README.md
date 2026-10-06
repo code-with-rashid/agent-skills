@@ -16,6 +16,7 @@ command in Claude Code.
 | [adversarial-qa](https://github.com/code-with-rashid/claude-adversarial-qa-skill) | Drives a repo to measured, resumable test-hardening convergence: coverage, mutation testing, fuzzing, and load/soak, until objective thresholds are met. |
 | [test-fix-repeat](https://github.com/code-with-rashid/test-fix-repeat) | Tests a running app end to end, fixes real bugs with regression tests, and repeats until three clean rounds in a row. |
 | [understory](https://github.com/code-with-rashid/understory) | Turns a codebase into an interactive HTML course the reader can actually defend — territory-mapped, self-verifying, with fieldwork in the real repo and spaced recall. |
+| [flake-or-fault](https://github.com/code-with-rashid/flake-or-fault) | Proves with reruns why tests fail — broken by your change, already broken on main, flaky, or order-dependent — then fixes the real cause instead of adding retries or sleeps. |
 
 More skills get added here as they ship — no need to re-add anything, they'll show up
 in this catalog automatically.
@@ -30,6 +31,7 @@ in this catalog automatically.
 /plugin install adversarial-qa@codewithrashid-skills
 /plugin install test-fix-repeat@codewithrashid-skills
 /plugin install understory@codewithrashid-skills
+/plugin install flake-or-fault@codewithrashid-skills
 ```
 
 ### Every other tool: copy the skill folder

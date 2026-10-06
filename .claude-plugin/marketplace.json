@@ -40,6 +40,15 @@
         "url": "https://github.com/code-with-rashid/understory.git",
         "path": "skills/understory"
       }
+    },
+    {
+      "name": "flake-or-fault",
+      "description": "Proves with reruns why tests fail — broken by your change, already broken on main, flaky, or order-dependent — then fixes the real cause instead of adding retries or sleeps.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/code-with-rashid/flake-or-fault.git",
+        "path": "skills/flake-or-fault"
+      }
     }
   ]
 }
