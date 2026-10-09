@@ -17,6 +17,7 @@ command in Claude Code.
 | [test-fix-repeat](https://github.com/code-with-rashid/test-fix-repeat) | Tests a running app end to end, fixes real bugs with regression tests, and repeats until three clean rounds in a row. |
 | [understory](https://github.com/code-with-rashid/understory) | Turns a codebase into an interactive HTML course the reader can actually defend — territory-mapped, self-verifying, with fieldwork in the real repo and spaced recall. |
 | [flake-or-fault](https://github.com/code-with-rashid/flake-or-fault) | Proves with reruns why tests fail — broken by your change, already broken on main, flaky, or order-dependent — then fixes the real cause instead of adding retries or sleeps. |
+| [context-drift](https://github.com/code-with-rashid/context-drift) | Checks AGENTS.md, CLAUDE.md, GEMINI.md, Copilot and Cursor rules against the real repo — runs the documented commands, finds stale paths, scripts, package managers and versions, and files a tool never loads — then fixes them. |
 
 More skills get added here as they ship — no need to re-add anything, they'll show up
 in this catalog automatically.
@@ -32,7 +33,13 @@ in this catalog automatically.
 /plugin install test-fix-repeat@codewithrashid-skills
 /plugin install understory@codewithrashid-skills
 /plugin install flake-or-fault@codewithrashid-skills
+/plugin install context-drift@codewithrashid-skills
 ```
+
+On Claude Code v2.1.275+ you can add the catalog and install in one step, e.g.
+`/plugin install mental-model --marketplace code-with-rashid/agent-skills`
+(from a shell, `claude plugin install mental-model --marketplace code-with-rashid/agent-skills`
+needs v2.1.292+).
 
 ### Every other tool: copy the skill folder
 
