@@ -18,6 +18,7 @@ command in Claude Code.
 | [understory](https://github.com/code-with-rashid/understory) | Turns a codebase into an interactive HTML course the reader can actually defend — territory-mapped, self-verifying, with fieldwork in the real repo and spaced recall. |
 | [flake-or-fault](https://github.com/code-with-rashid/flake-or-fault) | Proves with reruns why tests fail — broken by your change, already broken on main, flaky, or order-dependent — then fixes the real cause instead of adding retries or sleeps. |
 | [context-drift](https://github.com/code-with-rashid/context-drift) | Checks AGENTS.md, CLAUDE.md, GEMINI.md, Copilot and Cursor rules against the real repo — runs the documented commands, finds stale paths, scripts, package managers and versions, and files a tool never loads — then fixes them. |
+| [as-installed](https://github.com/code-with-rashid/as-installed) | Writes and fixes code against the library versions your project actually has installed — reads the real types, source and changelog, then checks every import and name exists and isn't deprecated. |
 
 More skills get added here as they ship — no need to re-add anything, they'll show up
 in this catalog automatically.
@@ -34,6 +35,7 @@ in this catalog automatically.
 /plugin install understory@codewithrashid-skills
 /plugin install flake-or-fault@codewithrashid-skills
 /plugin install context-drift@codewithrashid-skills
+/plugin install as-installed@codewithrashid-skills
 ```
 
 On Claude Code v2.1.275+ you can add the catalog and install in one step, e.g.

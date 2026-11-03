@@ -58,6 +58,15 @@
         "url": "https://github.com/code-with-rashid/context-drift.git",
         "path": "skills/context-drift"
       }
+    },
+    {
+      "name": "as-installed",
+      "description": "Writes and fixes code against the library versions your project actually has installed — reads the real types, source and changelog, then checks every import and name exists and isn't deprecated.",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/code-with-rashid/as-installed.git",
+        "path": "skills/as-installed"
+      }
     }
   ]
 }
