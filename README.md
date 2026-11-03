@@ -52,6 +52,7 @@ skills directory your tool reads:
 | Codex CLI | `~/.agents/skills/` | `.agents/skills/` |
 | Cursor | `~/.cursor/skills/` or `~/.agents/skills/` | `.cursor/skills/` or `.agents/skills/` |
 | Gemini CLI | `~/.gemini/skills/` or `~/.agents/skills/` | `.gemini/skills/` or `.agents/skills/` |
+| Antigravity CLI | `~/.gemini/skills/` | `.agents/skills/` |
 | GitHub Copilot | `~/.copilot/skills/` or `~/.agents/skills/` | `.github/skills/` or `.agents/skills/` |
 | Claude Code (without the plugin) | `~/.claude/skills/` | `.claude/skills/` |
 
@@ -70,14 +71,18 @@ New-Item -ItemType Directory -Force "$HOME\.agents\skills" | Out-Null
 Copy-Item -Recurse "$env:TEMP\mental-model\skills\mental-model" "$HOME\.agents\skills\"
 ```
 
-Some tools can also install straight from the repo:
+Or install straight from the repo:
 
+- Any of these tools, with GitHub CLI 2.90+:
+  `gh skill install code-with-rashid/mental-model mental-model --agent <tool> --scope user`
+  (`<tool>` is e.g. `github-copilot`, `codex`, `cursor`, `gemini-cli`, `antigravity-cli`, `claude-code`).
 - Gemini CLI: `gemini skills install https://github.com/code-with-rashid/mental-model.git --path skills/mental-model`
 - Codex CLI: ask the built-in `$skill-installer` to install from the repo URL.
 
-Per-tool docs: [Codex](https://developers.openai.com/codex/skills) ·
+Per-tool docs: [Codex](https://learn.chatgpt.com/docs/build-skills) ·
 [Cursor](https://cursor.com/docs/skills) ·
 [Gemini CLI](https://geminicli.com/docs/cli/skills/) ·
+[Antigravity](https://antigravity.google/docs/skills/) ·
 [Copilot](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills) ·
 [all Agent Skills clients](https://agentskills.io/clients).
 
