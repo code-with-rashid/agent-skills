@@ -59,7 +59,8 @@ skills directory your tool reads:
 | Claude Code (without the plugin) | `~/.claude/skills/` | `.claude/skills/` |
 
 `~/.agents/skills/` is read by Codex, Cursor, Gemini CLI, and Copilot, so one copy
-there covers all four. For example, with `mental-model`:
+there covers all four. Cursor also loads `~/.claude/skills/` and `~/.codex/skills/`, but
+only `~/.cursor/skills/` syncs to Cursor Cloud Agents. For example, with `mental-model`:
 
 ```bash
 git clone https://github.com/code-with-rashid/mental-model /tmp/mental-model
@@ -80,6 +81,7 @@ Or install straight from the repo:
   (`<tool>` is e.g. `github-copilot`, `codex`, `cursor`, `gemini-cli`, `antigravity-cli`, `claude-code`).
 - Gemini CLI: `gemini skills install https://github.com/code-with-rashid/mental-model.git --path skills/mental-model`
 - Codex CLI: ask the built-in `$skill-installer` to install from the repo URL.
+- GitHub Copilot CLI: `copilot skill add <path-to-cloned-repo>/skills/mental-model`.
 
 Per-tool docs: [Codex](https://learn.chatgpt.com/docs/build-skills) ·
 [Cursor](https://cursor.com/docs/skills) ·
